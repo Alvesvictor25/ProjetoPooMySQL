@@ -1,6 +1,6 @@
 package model.vo;
 
-public class LancamentoVO {
+public abstract class  LancamentoVO {
 
 	private int id;
 	private int idusuario;

@@ -16,20 +16,23 @@ public class MenuCadastro {
 
 		while (opcao != OPCAO_MENU_CADASTRO_SAIR) {
 			switch (opcao) {
-			case OPCAO_MENU_CADASTRO_USUARIO: {
-				MenuUsuario menuUsuario = new MenuUsuario();
-				menuUsuario.apresentarMenuUsuario();
-				break;
+				case OPCAO_MENU_CADASTRO_USUARIO: {
+					MenuUsuario menuUsuario = new MenuUsuario();
+					menuUsuario.apresentarMenuUsuario();
+					break;
+				}
+				case OPCAO_MENU_CADASTRO_RECEITA: {
+					MenuReceita menuReceita = new MenuReceita();
+					menuReceita.apresentarMenuReceita();
+					break;
+				}
+				case OPCAO_MENU_CADASTRO_DESPESAS: {
+					MenuDespesa menuDespesa = new MenuDespesa();
+					menuDespesa.apresentarMenuDespesa();
+					break;
+				}
 			}
-			case OPCAO_MENU_CADASTRO_RECEITA: {
-				System.out.println("Entrei no menu cadastro!");
-				break;
-			}
-			case OPCAO_MENU_CADASTRO_DESPESAS: {
-				System.out.println("Entrei no menu cadastro!");
-				break;
-			}
-			}
+			opcao = this.apresentarOpcoesDeMenu();
 		}
 	}
 

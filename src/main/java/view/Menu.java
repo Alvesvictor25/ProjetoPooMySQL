@@ -15,19 +15,20 @@ public class Menu {
 
 		while (opcao != OPCAO_MENU_SAIR) {
 			switch (opcao) {
-			case OPCAO_MENU_CADASTRO: {
-				MenuCadastro menuCadastro = new MenuCadastro();
-				menuCadastro.apresentarMenuCadastro();
-				break;
-			}
-			case OPCAO_MENU_RELATORIO: {
-				MenuRelatorio menuRelatorio = new MenuRelatorio();
-				menuRelatorio.apresentarMenuRelatorio();
-				break;
-			}
-			default: {
-				System.out.println("\nOpção inválida!");
-			}
+				case OPCAO_MENU_CADASTRO: {
+					MenuCadastro menuCadastro = new MenuCadastro();
+					menuCadastro.apresentarMenuCadastro();
+					break;
+				}
+				case OPCAO_MENU_RELATORIO: {
+					MenuRelatorio menuRelatorio = new MenuRelatorio();
+					menuRelatorio.apresentarMenuRelatorio();
+					break;
+				}
+	
+				default: {
+					System.out.println("\nOpção inválida!");
+				}
 
 			}
 			opcao = this.apresentarOpcoesMenu();

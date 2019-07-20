@@ -73,10 +73,9 @@ public class UsuarioVO {
 	}
 
 	public void imprimir() {
-		System.out.printf("%3s  %-40s  %-15s  %-15s \n",
-				this.getIdUsuario(), 
-				this.getNome(),
-				this.getCpf(),
-				this.getTelefone());
+		System.out.printf("%-10s  %-20s  %-15s  %-15s %-15s \n", this.getIdUsuario(), this.getNome(), this.getCpf(),
+				this.getTelefone(), this.getLogin());
 	}
+
+	
 }
